@@ -3,25 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Grand Butler — 30s demo</title>
-  <meta name="robots" content="noindex,nofollow">
+  <title>CastleIQ — Black Friday 2026</title>
+  <meta name="description" content="Black Friday 2026. 40% off CastleIQ services. Make your pricing work harder.">
   <style>
-    html,body{margin:0;min-height:100%;background:#0B0618;color:#F5F3FF;font-family:Inter,system-ui,sans-serif}
-    .wrap{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;gap:16px}
-    h1{margin:0;font-size:clamp(1.4rem,3vw,2rem);letter-spacing:-.02em}
-    p{margin:0;color:#C4B5FD;font-size:.95rem}
-    video{width:min(1100px,100%);border-radius:16px;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.45)}
-    a{color:#C4B5FD}
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #071422; color: #F7F4EC; font-family: "Segoe UI", system-ui, sans-serif; }
+    .wrap { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 32px 20px 48px; gap: 18px; }
+    .mark { margin: 0; letter-spacing: .28em; font-size: .82rem; font-weight: 700; color: #C9A84C; }
+    h1 { margin: 0; font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 650; letter-spacing: -.03em; text-align: center; }
+    .offer { margin: 0; color: #C9A84C; font-weight: 700; letter-spacing: .08em; font-size: .95rem; text-align: center; }
+    video { width: min(1100px, 100%); border-radius: 16px; background: #000; box-shadow: 0 30px 80px rgba(0,0,0,.45); }
+    p { margin: 0; color: #d9d3c5; text-align: center; max-width: 36rem; line-height: 1.5; }
+    a.cta { display: inline-block; margin-top: 6px; background: #C9A84C; color: #0B1F3A; text-decoration: none; font-weight: 700; letter-spacing: .04em; padding: 14px 22px; border-radius: 999px; }
+    a.cta:hover { filter: brightness(1.06); }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <h1>The Grand Butler</h1>
-    <video controls playsinline preload="auto">
-      <source src="https://media.githubusercontent.com/media/iBrna/grand-butler-30s/ca694d03f8c62acd01ebaba6611657c7a9aec73c/grand-butler-30s.mp4" type="video/mp4">
-      <source src="https://cdn.jsdelivr.net/gh/iBrna/grand-butler-30s@ca694d03f8c62acd01ebaba6611657c7a9aec73c/grand-butler-30s.mp4" type="video/mp4">
-    </video>
-    <p><a href="https://www.grandbutler.com/">grandbutler.com</a></p>
+    <p class="mark">CASTLEIQ</p>
+    <h1>Black Friday 2026</h1>
+    <p class="offer">40% OFF CASTLEIQ SERVICES</p>
+    <video id="film" controls playsinline preload="metadata"></video>
+    <script src="film.js"></script>
+    <p>Make your pricing work harder.</p>
+    <a class="cta" href="https://castleiq.com">Claim your offer at CastleIQ.com</a>
   </main>
 </body>
 </html>
